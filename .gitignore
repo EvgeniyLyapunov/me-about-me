@@ -1,0 +1,4 @@
+/node_modules
+/dist
+/favicon
+package-lock.json
