@@ -1,0 +1,128 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../../../images/bg/hero-bg-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    filter: opacity(0.5);
+    z-index: -1;
+  
+  }
+  &__container {
+    max-height: 90vh;
+  }
+  &__nav {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 7vh;
+  }
+  &__nav-list {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    display: inline-block;
+    position: relative;
+    font-weight: 200;
+    font-size: 18px;
+    color: #000;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      margin: -5px 0;
+      background-color: #dadada;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: transform 0.4s ease-in-out 0s, visibility 0.4s ease-in-out 0s;
+    }
+    &:hover::before{
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+  &__burger {
+    display: none;
+  }
+  &__heading-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 67vh;
+  }
+  &__title-box {
+    position: relative;
+    align-self: flex-start;
+    max-width: 40%;
+  }
+  &__title-badge {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 7px 12px;
+    color: #fff;
+    background-color: #ffd117;
+    border-radius: 3px;
+  }
+  &__title {
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 200;
+    font-size: 80px;
+    line-height: 0.8em;
+  }
+  &__title-divider {
+    display: inline-block;
+    align-self: center;
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 0px;
+  }
+  &__subtitle-box {
+    position: relative;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+  }
+  &__subtitle-badge {
+    align-self: flex-end;
+    display: inline-block;
+    padding: 7px 12px;
+    color:#fff;
+    background-color: #5cd2d9;
+    border-radius: 3px;
+  }
+  &__subtitle {
+    text-align: right;
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 200;
+    font-size: 80px;
+    line-height: 0.8em;
+  }
+  &__btn {
+    width: 170px;
+    height: 55px;
+    margin-left: 50px;
+    font-weight: 200;
+    font-size: 28px;
+    color: #fff;
+    background-color: #ff6927;
+    border-radius: 3px;
+  }
+}

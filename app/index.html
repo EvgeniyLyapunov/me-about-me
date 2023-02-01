@@ -22,9 +22,129 @@
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <title>Me about me</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <section class="hero">
+    <div class="container hero__container">
+      <nav class="hero__nav">
+        <ul class="hero__nav-list">
+          <li class="hero__nav-item">
+            <a class="hero__link" href="#me">about me</a>
+          </li>
+          <li class="hero__nav-item">
+            <a class="hero__link" href="#">my skills</a>
+          </li>
+          <li class="hero__nav-item">
+            <a class="hero__link" href="#">portfolio</a>
+          </li>
+          <li class="hero__nav-item">
+            <a class="hero__link" href="#">rest room</a>
+          </li>
+          <li class="hero__nav-item">
+            <a class="hero__link" href="#">feedbacks</a>
+          </li>
+        </ul>
+        <div class="hero__burger burger" data-modal="hero-nav">
+          <div class="burger__element burger__element_first"></div>
+          <div class="burger__element burger__element_second"></div>
+          <div class="burger__element burger__element_thirth"></div>
+          <div class="burger__element burger__element_fourth"></div>
+        </div>
+      </nav>
+      <div class="hero__heading-box">
+        <div class="hero__title-box">
+          <span class="hero__title-badge">Java Script</span>
+          <h1 class="hero__title">
+            Невыразимая лёгкость<br> бытия
+          </h1>
+        </div>
+        <span class="hero__title-divider">или</span>
+        <div class="hero__subtitle-box">
+          <span class="hero__subtitle-badge">React</span>
+          <h2 class="hero__subtitle">
+            путь<br> длинной в&nbsp;совершенство
+          </h2>
+        </div>
+      </div>
+      <button class="button-base hero__btn">more...</button>
+    </div>
+  </section>
+
+  <section class="me" id="me">
+    <div class="container me__container">
+      <div class="me__info-box">
+        <h2 class="me__title"  >Привет!</h2>
+        <p class="me__name">Mеня зовут Евгений.</p>
+        <p class="me__from">Я front-end разработчик.<br> Живу в Краснодаре.</p>
+        <p class="me__glad">Рад приветствовать вас на&nbsp;своём сайте!</p>
+      </div>
+      <div class="me__image-box">
+        <img class="me__image" src="images/me/me-and-laptop.png" alt="me and laptop">
+      </div>
+      <nav class="me__nav-box">
+        <ul class="me__nav-list">
+          <li class="me__nav-item me__nav-item_backstory">
+            <button class="button-base" id="backstory-btn" data-modal="backstory">Предыстория</button>
+          </li>
+          <li class="me__nav-item me__nav-item_motivation">
+            <button class="button-base" id="motivation-btn" data-modal="motivation">Мотивация</button>
+          </li>
+          <li class="me__nav-item me__nav-item_goals">
+            <button class="button-base" id="goals-btn" data-modal="goals">Цели</button>
+          </li>
+          <li class="me__nav-item me__nav-item_course">
+            <button class="button-base" id="course-btn" data-modal="course">Направления</button>
+          </li>
+          <li class="me__nav-item me__nav-item_what-now">
+            <button class="button-base" id="what-now-btn" data-modal="what-now">Что сейчас</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="me__burger burger" data-modal="me-nav">
+        <div class="burger__element burger__element_first"></div>
+        <div class="burger__element burger__element_second"></div>
+        <div class="burger__element burger__element_thirth"></div>
+        <div class="burger__element burger__element_fourth"></div>
+      </div>
+    </div>
+
+    <div class="container me__container-320">
+      <h2 class="me__title"  >Привет!</h2>
+      <p class="me__name">Mеня зовут Евгений.</p>
+      <div class="me__image-box me__image-box-320">
+        <img class="me__image" src="images/me/me-and-laptop.png" alt="me and laptop">
+      </div>
+      <nav class="me__nav-box me__nav-box-320">
+        <ul class="me__nav-list">
+          <li class="me__nav-item me__nav-item_backstory">
+            <button class="button-base" id="backstory-btn" data-modal="backstory">Предыстория</button>
+          </li>
+          <li class="me__nav-item me__nav-item_motivation">
+            <button class="button-base" id="motivation-btn" data-modal="motivation">Мотивация</button>
+          </li>
+          <li class="me__nav-item me__nav-item_goals">
+            <button class="button-base" id="goals-btn" data-modal="goals">Цели</button>
+          </li>
+          <li class="me__nav-item me__nav-item_course">
+            <button class="button-base" id="course-btn" data-modal="course">Направления</button>
+          </li>
+          <li class="me__nav-item me__nav-item_what-now">
+            <button class="button-base" id="what-now-btn" data-modal="what-now">Что сейчас</button>
+          </li>
+        </ul>
+      </nav>
+      <p class="me__from">Я front-end разработчик.<br> Живу в Краснодаре.</p>
+      <p class="me__glad">Рад приветствовать вас на&nbsp;своём сайте!</p>
+      <div class="me__burger burger me__burger-320" data-modal="me-nav">
+        <div class="burger__element burger__element_first"></div>
+        <div class="burger__element burger__element_second"></div>
+        <div class="burger__element burger__element_thirth"></div>
+        <div class="burger__element burger__element_fourth"></div>
+      </div>
+    </div>
+  </section>
+
   
   <script src="js/main.min.js"></script>
 </body>

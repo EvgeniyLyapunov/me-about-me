@@ -1,0 +1,158 @@
+.me {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  &__container {
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__container-320 {
+    display: none;
+  }
+  &__container::before {
+    position: absolute;
+    content: '';
+    top: 30px;
+    right: 0px;
+    left: 0px;
+    bottom: 24px;
+    background: linear-gradient(45deg, #ffd8c7,  #ffe6db, #fff1eb, #fff, #fff);
+    z-index: -2;
+  }
+  &__image-box {
+    width: 420px;
+    min-height: 450px;
+  }
+  &__image {
+    width: 450px;
+    object-fit: contain;
+  }
+  &__info-box {
+    position: relative;
+    max-width: 720px;
+    padding-bottom: 50px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 300;
+    font-size: 60px;
+  }
+  &__name {
+    max-width: 600px;
+    margin-bottom: 140px;
+    font-weight: 200;
+    font-size: 40px;
+  }
+  &__from {
+    position: relative;
+    max-width: 600px;
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 28px;
+    color: #000;
+  }
+  &__glad {
+    max-width: 600px;
+    font-weight: 100;
+    font-size: 28px;
+    color: #000;
+  }
+  &__nav-box {
+    min-width: 150px;
+  }
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__nav-item {
+    position: relative;
+    height: 50px;
+    font-weight: 100;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.4s text-shadow ease-in-out;
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0px;
+      height: 50px;
+      top: -5px;
+      left: -10px;
+      z-index: -1;
+      transition: 0.4s all ease-in-out;
+    }
+    &_backstory::before {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      left: -10px;
+      background-color: rgba(255, 110, 59, 0.3);
+    }
+    &_backstory::after {
+      background-color: rgba(255, 110, 59, 0.3);
+    }
+    &_motivation::before {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      left: 52px;
+      background-color: rgba(255, 220, 98, 0.3);
+    }
+    &_motivation::after {
+      background-color: rgba(255, 220, 98, 0.3);
+    }
+    &_goals::before {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      left: 29px;
+      background-color: rgba(255, 110, 59, 0.3);
+    }
+    &_goals::after {
+      background-color: rgba(255, 110, 59, 0.3);
+    }
+    &_course::before {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      left: 97px;
+      background-color: rgba(92, 210, 217, 0.3);
+    }
+    &_course::after {
+      background-color: rgba(92, 210, 217, 0.3);
+    }
+    &_what-now::before {
+      width: 50px;
+      height: 50px;
+      top: -5px;
+      left: -15px;
+      background-color: rgba(255, 220, 98, 0.3);
+    }
+    &_what-now::after {
+      background-color: rgba(255, 220, 98, 0.3);
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+    &:hover::after {
+      width: 120%;
+    }
+  }
+  &__burger {
+    display: none;
+  }
+}
