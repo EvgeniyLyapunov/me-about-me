@@ -1,5 +1,7 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", () => {
+import hero from "./modules/hero";
+import me from "./modules/me";
 
-});
+hero();
+me();
