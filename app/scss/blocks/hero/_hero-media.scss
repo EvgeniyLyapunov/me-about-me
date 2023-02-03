@@ -110,10 +110,12 @@
     height: 50px;
     box-shadow: 0 0 0 0vh rgba(256, 256, 256, 0.9);
     transition: all 0.8s ease-in-out;
+    z-index: 5;
     cursor: pointer;
     &__element {
       width: 18px;
       height: 18px;
+      transition: all 0.8s ease-in-out;
       &_first {
         background-color:#ffd8c7;
       }
@@ -131,6 +133,9 @@
       box-shadow: 0 0 0 100vh rgba(256, 256, 256, 0.9);
       transform: rotate(-180deg);
       z-index: 5;
+    }
+    &_active > .burger__element {
+      border-radius: 50%;
     }
   }
 }

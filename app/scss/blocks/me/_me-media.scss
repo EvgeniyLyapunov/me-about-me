@@ -63,7 +63,7 @@
         width: 40px;
         height: 40px;
         top: -5px;
-        left: -10px;
+        left: 0;
       }
       &_motivation::before {
         width: 40px;
@@ -81,13 +81,13 @@
         width: 40px;
         height: 40px;
         top: -5px;
-        left: 97px;
+        left: 90px;
       }
       &_what-now::before {
         width: 40px;
         height: 40px;
         top: -5px;
-        left: -15px;
+        left: 0;
       }
     }
   }
@@ -110,13 +110,14 @@
     }
     &__nav-box {
       position: absolute;
+      min-width: 130px;
       top: 50%;
       transform: translateY(-50%);
       right: -100vw;
       transition: 0.8s all ease-in-out;
       &_active {
         display: block;
-        right: 1vw;
+        right: 5vw;
       }
     }
     &__burger {
@@ -127,6 +128,9 @@
       &_active {
         transform: rotate(-180deg);
       }
+      &_active > .burger__element {
+        border-radius: 50%;
+      }
     }
   }
 }
@@ -134,57 +138,56 @@
 @media (max-width: 575.98px) {
   .me {
     &__container {
-      display: none;
-    }
-    &__container-320 {
+      min-height: 100vh;
+      padding: 15px;
+      position: relative;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      &::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background: linear-gradient(45deg, #ffd8c7,  #ffe6db, #fff1eb, #fff, #fff);
-        z-index: -2;
-      }
+    }
+    &__info-box-320top, &__info-box-320bottom {
+      display: block;
+      align-self: flex-start;
+    }
+    &__info-box {
+      display: none;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 0px;
+    }
+    &__name {
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+    &__image-box {
+      display: flex;
+      justify-content: flex-end;
+      align-self: center;
+      width: 100vw;
+      min-height: 250px;
+    }
+    &__image {
+      margin-top: -20px;
+      width: 45vh;
+      object-fit: contain;
+    }
+    &__from {
+      margin-bottom: 0px;
+      font-size: 16px;
+    }
+    &__glad {
+      font-size: 16px;
     }
     &__burger {
       top: 15px;
       right: 15px;
     }
-    &__title {
-      margin-top: 15px;
-      margin-bottom: 15px;
-      font-size: 30px;
-      line-height: 30px;
-    }
-    &__name {
-      max-width: unset;
-      margin-bottom: 0;
-      font-weight: 200;
-      font-size: 22px;
-    }
-    &__image-box {
-      width: 210px;
-      min-height: unset;
-    }
-    &__image {
-      width: 210px;
-      object-fit: contain;
-    }
-    &__from {
-      margin-bottom: 0;
-      font-weight: 100;
-      font-size: 16px;
-      text-align: center;
-      color: #000;
-    }
-    &__glad {
-      font-size: 16px;
-      color: #000;
+    &__nav-item {
+      &:not(:last-child) {
+        margin-bottom: 6vh;
+      }
     }
   }
 }
