@@ -91,7 +91,7 @@
     }
     &_backstory::before {
       top: -5px;
-      left: -10px;
+      left: 0px;
       background-color: rgba(255, 110, 59, 0.3);
     }
     &_motivation::before {
@@ -106,12 +106,12 @@
     }
     &_course::before {
       top: -5px;
-      left: 97px;
+      left: 100px;
       background-color: rgba(92, 210, 217, 0.3);
     }
     &_what-now::before {
       top: -5px;
-      left: -15px;
+      left: 0;
       background-color: rgba(255, 220, 98, 0.3);
     }
     &:hover::before {
