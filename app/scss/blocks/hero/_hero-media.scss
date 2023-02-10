@@ -47,6 +47,23 @@
       font-weight: 200;
       font-size: 20px;
     }
+    &__more-badge {
+      min-width: 80px;
+      padding: 6px 10px;
+      font-size: 12px;
+      &-cs {
+        bottom: 100px;
+        left: 20px;
+      }
+      &-wpf {
+        bottom: 60px;
+        left: 150px;
+      }
+      &-asp {
+        bottom: 20px;
+        left: 280px;
+      }
+    }
   }
 }
 
@@ -99,6 +116,23 @@
     }
     &__btn {
       margin-left: 0;
+    }
+    &__more-badge {
+      min-width: 70px;
+      padding: 6px 10px;
+      font-size: 12px;
+      &-cs {
+        bottom: 230px;
+        left: 20px;
+      }
+      &-wpf {
+        bottom: 130px;
+        left: 80px;
+      }
+      &-asp {
+        bottom: 30px;
+        left: 140px;
+      }
     }
   }
   // burger
@@ -186,7 +220,25 @@
       height: 30px;
       font-size: 16px;
       margin-top: 2vh;
-    } 
+    }
+    &__more-badge {
+      min-width: 60px;
+      padding: 3px 6px;
+      font-size: 12px;
+      &-cs {
+        bottom: 170px;
+        left: 20px;
+      }
+      &-wpf {
+        bottom: 120px;
+        left: 70px;
+      }
+      &-asp {
+        bottom: 70px;
+        left: 120px;
+      }
+    }
+ 
   }
 
   .burger {

@@ -20,6 +20,7 @@
   
   }
   &__container {
+    position: relative;
     max-height: 90vh;
   }
   &__nav {
@@ -123,5 +124,30 @@
     color: #fff;
     background-color: #ff6927;
     border-radius: 3px;
+  }
+  &__more-badge {
+    position: absolute;
+    display: inline-block;
+    min-width: 100px;
+    margin-bottom: 15px;
+    padding: 7px 12px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    &-cs {
+      bottom: 100px;
+      left: 50px;
+      background-color: #5cd2d9;
+    }
+    &-wpf {
+      bottom: 60px;
+      left: 180px;
+      background-color: #ff6927;
+    }
+    &-asp {
+      bottom: 20px;
+      left: 310px;
+      background-color: #ffd117;
+    }
   }
 }

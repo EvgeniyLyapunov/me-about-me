@@ -1,0 +1,17 @@
+.motivation {
+  background-image: url('../../../../images/me-modal-pic/fuji.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 30px;
+  background-size: 190px 190px;
+}
+
+#motivation {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 575.98px) {
+  .motivation {
+    background-position: bottom 0px right 30px;
+    background-size: 150px 150px;
+  }
+}

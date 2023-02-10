@@ -1,0 +1,77 @@
+@media (max-width: 767.98px) {
+  .overlay-me {
+    z-index: 6;
+    // burger button has z-index: 5;
+  }
+
+  .modal-me {
+    width: 500px;
+    height: 500px;
+  }
+
+  @keyframes modal-show {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 500px;
+      height: 500px;
+    }
+  }
+  
+  @keyframes modal-hide {
+    from {
+      width: 500px;
+      height: 500px;
+    }
+    to {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .modal-me {
+    width: 100vw;
+    height: 100vh;
+    &__text {
+      margin-bottom: 5px;
+      text-indent: 15px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color:#fff;
+      &::first-letter {
+        font-family: 'Pattaya';
+        font-size: 20px;
+        line-height: 20px;
+        color: #cf5060;
+        margin-right: 3px;
+      }
+    }
+  }
+
+  @keyframes modal-show {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+  
+  @keyframes modal-hide {
+    from {
+      width: 100vw;
+      height: 100vh;
+    }
+    to {
+      width: 0;
+      height: 0;
+    }
+  }
+}

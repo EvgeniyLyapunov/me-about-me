@@ -49,7 +49,7 @@ function cleanDist() {
 }
 
 function images() {
-  return src("app/imagin/**/*")
+  return src("app/images/**/*")
   .pipe(imagemin([
     imagemin.gifsicle({interlaced: true}),
     imagemin.mozjpeg({quality: 75, progressive: true}),
@@ -74,7 +74,7 @@ function scripts() {
 function styles() {
   return src("app/scss/style.scss")
           .pipe(scss({outputStyle: "compressed"}))
-          .pipe(concat("style.css"))
+          .pipe(concat("style.min.css"))
           .pipe(autoprefixer({
             overrideBrowserslist: ["last 10 version"],
             grid: true
@@ -106,5 +106,5 @@ exports.scripts = scripts;
 exports.cleanDist = cleanDist;
 exports.images = images;
 
-exports.build = series(cleanDist, images, build); // запускать когда проект готов, для создания папки dist - gulp build
+exports.build = series(cleanDist, build, images); // запускать когда проект готов, для создания папки dist - gulp build
 exports.default = parallel(styles, scripts, browsersync, watching); // запускать для работы с проектом gulp

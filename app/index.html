@@ -22,7 +22,8 @@
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <title>Me about me</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <section class="hero">
@@ -67,7 +68,10 @@
           </h2>
         </div>
       </div>
-      <button class="button-base hero__btn">more...</button>
+      <button class="button-base hero__btn animate__animated animate__pulse animate__infinite" id="hero__more-btn">more...</button>
+      <span class="hero__more-badge hero__more-badge-cs visually-hidden">C#</span>
+      <span class="hero__more-badge hero__more-badge-wpf visually-hidden">WPF</span>
+      <span class="hero__more-badge hero__more-badge-asp visually-hidden">ASP.NET</span>
     </div>
   </section>
 
@@ -142,6 +146,73 @@
         </p>
         <p class="modal-me__text">
           - мне это нравится;
+        </p>
+      </div>
+      <button class="button-base modal-me__close modal__close"></button>
+    </div>
+
+    <div class="modal modal-me motivation hide" data-modal="motivation">
+      <div class="modal-me__text-box" id="motivation">
+        <p class="modal-me__text">
+          Моя мотивация развиваться как программист имеет две стороны: позитивную и&nbsp;негативную.
+        </p>
+        <p class="modal-me__text">
+          &mdash;&nbsp;мне нравится писать код, нравятся абстрактные логические конструкции, мне нравится чувство, когда твой код работает!
+        </p>
+        <p class="modal-me__text">
+          &mdash;&nbsp;мне жаль потраченное на&nbsp;другие профессии время;
+        </p>
+        <p class="modal-me__text">
+          Я&nbsp;осознанно не&nbsp;говорю про деньги, т.&nbsp;к.&nbsp;с&nbsp;одной стороны это очевидная вещь, а&nbsp;с&nbsp;другой это обесценит все остальные пункты.
+        </p>
+      </div>
+      <button class="button-base modal-me__close modal__close"></button>
+    </div>
+
+    <div class="modal modal-me goals hide" data-modal="goals">
+      <div class="modal-me__text-box" id="goals">
+        <p class="modal-me__text">
+          Моя текущая цель&nbsp;&mdash; найти стабильную работу;
+        </p>
+        <p class="modal-me__text">
+          И&nbsp;конечно&nbsp;же:
+        </p>
+        <p class="modal-me__text">
+          &mdash;&nbsp;изучить все связанные с&nbsp;Js технологии;
+        </p>
+        <p class="modal-me__text">
+          &mdash;&nbsp;сделать Мир лучше;
+        </p>
+
+      </div>
+      <button class="button-base modal-me__close modal__close"></button>
+    </div>
+
+    <div class="modal modal-me course hide" data-modal="course">
+      <div class="modal-me__text-box" id="course">
+        <p class="modal-me__text">
+          Сейчас направление моего развития&nbsp;&mdash; Java Script, React и&nbsp;все технологии с&nbsp;ними связанные.
+        </p>
+        <p class="modal-me__text">
+          Мой background&nbsp;&mdash; это C#, ASP.NET, WPF. При необходимости буду рад обратиться в&nbsp;эту сторону.
+        </p>
+      </div>
+      <button class="button-base modal-me__close modal__close"></button>
+    </div>
+
+    <div class="modal modal-me what-now hide" data-modal="what-now">
+      <div class="modal-me__text-box" id="what-now">
+        <p class="modal-me__text">
+          На данный момент:
+        </p>
+        <p class="modal-me__text">
+          - я активно ищу работу;
+        </p>
+        <p class="modal-me__text">
+          - пишу проект на React "notes about my food";
+        </p>
+        <p class="modal-me__text">
+          - изучаю алгоритмы и структуры данных через Js;
         </p>
       </div>
       <button class="button-base modal-me__close modal__close"></button>

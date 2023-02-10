@@ -1,0 +1,13 @@
+.backstory {
+  background-image: url('../../images/me-modal-pic/tree.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 15px right 15px;
+  background-size: 170px 170px;
+}
+
+@media (max-width: 575.98px) {
+  .backstory {
+    background-position: bottom 10px right 15px;
+    background-size: 130px 130px;
+  }
+}
