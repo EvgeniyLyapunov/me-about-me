@@ -22,7 +22,7 @@ const hero = () => {
 
   moreButton.addEventListener("click", () => {
 		moreButton.classList.remove('animate__animated', 'animate__pulse', 'animate__infinite')
-    moreButton.classList.add("animate__animated", "animate__bounceOutDown");
+    moreButton.classList.add('animate__animated', 'animate__bounceOutDown');
 		let time = 300;
 		moreBadges.forEach((item) => {
 			setTimeout(() => {
@@ -31,6 +31,10 @@ const hero = () => {
 			}, time);
 			time += 300;
 		});
+    setTimeout(() => {
+      moreButton.classList.add('hidden');
+      moreButton.classList.remove('animate__animated', 'animate__bounceOutDown')
+    }, 500)
   });
 };
 

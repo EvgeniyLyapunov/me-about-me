@@ -1,0 +1,89 @@
+.skills {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 100px;
+    font-family: "Yanone Kaffeesatz";
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+    &::before {
+      position: absolute;
+      top: -11px;
+      right: 327px;
+      bottom: -11px;
+      left: 327px;
+      content: '';
+      border-radius: 5px;
+      background-color: #ff6927;
+      z-index: -2;
+
+      transform: rotate(3deg);
+    }
+    &::after {
+      position: absolute;
+      top: -10px;
+      right: 330px;
+      bottom: -10px;
+      left: 330px;
+      content: '';
+      border-radius: 5px;
+      background-color: #ffd8c7;
+      z-index: -1;
+    }
+  }
+  &__school-block {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 35px 15px 25px 15px;
+    border: 2px solid #ffd8c7;
+    border-radius: 5px;
+    background-color: #fff;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 5px;
+      z-index: -1;
+      transform: rotate(1deg) translateY(12px) translateX(15px);
+    }
+    &_netology::after {
+      background-color: #ff6927;
+    }
+    &_udemy::after {
+      background-color: #ffd117;
+    }
+    &_skillbox::after {
+      background-color: #5cd2d9;
+    }
+  }
+  &__school-title {
+    position: absolute;
+    top: -13px;
+    left: 25px;
+    padding: 0 10px;
+    font-size: 20px;
+    background-color: #fff;
+    z-index: 2;
+  }
+  &__cours {
+    padding: 10px;
+  }
+  &__cours-title {
+    margin-bottom: 10px;
+  }
+  &__cours-descr {
+    margin-left: 100px;
+  }
+}
