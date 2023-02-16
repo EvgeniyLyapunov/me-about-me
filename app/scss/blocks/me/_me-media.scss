@@ -117,7 +117,7 @@
       transition: 0.8s all ease-in-out;
       &_active {
         display: block;
-        right: 21vw;
+        right: 10vw;
       }
     }
     &__burger {
@@ -183,6 +183,11 @@
     &__burger {
       top: 15px;
       right: 15px;
+    }
+    &__nav-box {
+      &_active {
+        right: 21vw;
+      }
     }
     &__nav-item {
       &:not(:last-child) {

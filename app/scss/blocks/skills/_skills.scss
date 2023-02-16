@@ -7,7 +7,8 @@
   }
   &__title {
     position: relative;
-    margin-bottom: 100px;
+    width: 440px;
+    margin: 0 auto 100px auto;
     font-family: "Yanone Kaffeesatz";
     font-weight: 300;
     font-size: 60px;
@@ -15,9 +16,9 @@
     &::before {
       position: absolute;
       top: -11px;
-      right: 327px;
+      right: -3px;
       bottom: -11px;
-      left: 327px;
+      left: -3px;
       content: '';
       border-radius: 5px;
       background-color: #ff6927;
@@ -28,9 +29,9 @@
     &::after {
       position: absolute;
       top: -10px;
-      right: 330px;
+      right: -6px;
       bottom: -10px;
-      left: 330px;
+      left: -6px;
       content: '';
       border-radius: 5px;
       background-color: #ffd8c7;
@@ -39,7 +40,7 @@
   }
   &__school-block {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 35px 15px 25px 15px;
     border: 2px solid #ffd8c7;
     border-radius: 5px;
