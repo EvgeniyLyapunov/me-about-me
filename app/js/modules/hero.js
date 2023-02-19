@@ -18,7 +18,7 @@ const hero = () => {
   });
 
   const moreButton = document.querySelector("#hero__more-btn"),
-    moreBadges = document.querySelectorAll(".hero__more-badge");
+        moreBadges = document.querySelectorAll(".hero__more-badge");
 
   moreButton.addEventListener("click", () => {
 		moreButton.classList.remove('animate__animated', 'animate__pulse', 'animate__infinite')
