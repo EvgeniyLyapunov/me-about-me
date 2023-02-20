@@ -31,7 +31,7 @@ const techno = () => {
           }
         });
         resolve(maxTimer);
-      }, 3000);
+      }, 2000);
     }).then((data) => {
       setTimeout(() => {
         gridContainer.style.background = 'linear-gradient(45deg, #ffd8c7,  #ffe6db, #fff1eb, #fff, #fff)';
@@ -44,7 +44,7 @@ const techno = () => {
       setTimeout(() => {
         text.classList.remove('hide');
         text.classList.add('animate__animated', 'animate__fadeIn', 'animate__slower');
-      }, +data+800);
+      }, +data+400);
     })
   }
 
