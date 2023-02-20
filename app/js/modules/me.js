@@ -43,7 +43,7 @@ const me = () => {
 
   function showMeModal(modalSelector) {
     overlayMe.classList.add('overlay-me_show');
-    overlayMe.classList.add('animation-overlay-show');
+    overlayMe.classList.add('animation-opacity-show');
 
     modals.forEach(item => {
       if(item.getAttribute('data-modal') === modalSelector) {
@@ -55,7 +55,7 @@ const me = () => {
         setTimeout(() => {
           textBlock.classList.remove('hide');
           textBlock.classList.add('animation-text-show');
-          overlayMe.classList.remove('animation-overlay-show');
+          overlayMe.classList.remove('animation-opacity-show');
         }, 400)
       } else {
         item.classList.add('hide');
@@ -69,7 +69,7 @@ const me = () => {
     const textBlock = document.querySelector(`#${modal.getAttribute('data-modal')}`);
     textBlock.classList.add('hide');
     modal.classList.add('animation-modal-hide');
-    overlayMe.classList.add('animation-overlay-hide');
+    overlayMe.classList.add('animation-opacity-hide');
     
     setTimeout(() => {
       modal.classList.remove('show-flex');
@@ -77,7 +77,7 @@ const me = () => {
       textBlock.classList.remove('hide');
       modal.classList.remove('animation-modal-hide');
       overlayMe.classList.remove('overlay-me_show');
-      overlayMe.classList.remove('animation-overlay-hide');
+      overlayMe.classList.remove('animation-opacity-hide');
     }, 400)
   }
 

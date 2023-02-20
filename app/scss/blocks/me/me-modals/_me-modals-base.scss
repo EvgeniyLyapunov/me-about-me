@@ -53,8 +53,8 @@
   }
 } 
 
-.animation-overlay-show {
-  animation: overlay-show 0.4s linear;
+.animation-opacity-show {
+  animation: opacity-show 0.4s linear;
 }
 
 .animation-modal-show {
@@ -65,8 +65,8 @@
   animation: text-show 0.2s linear;
 }
 
-.animation-overlay-hide {
-  animation: overlay-hide 0.4s linear;
+.animation-opacity-hide {
+  animation: opacity-hide 0.4s linear;
   opacity: 0;
 }
 
@@ -76,7 +76,7 @@
   height: 0;
 }
 
-@keyframes overlay-show {
+@keyframes opacity-show {
   from {
     opacity: 0;
   }
@@ -85,7 +85,7 @@
   }
 }
 
-@keyframes overlay-hide {
+@keyframes opacity-hide {
   from {
     opacity: 1;
   }
