@@ -1,0 +1,82 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  &__title {
+    position: relative;
+    width: 280px;
+    margin: 0 auto 12vh auto;
+    font-family: "Yanone Kaffeesatz";
+    font-weight: 300;
+    font-size: 60px;
+    text-align: center;
+    &::before {
+      position: absolute;
+      top: -11px;
+      right: -3px;
+      bottom: -11px;
+      left: -3px;
+      content: '';
+      border-radius: 5px;
+      background-color: #ff6927;
+      z-index: -2;
+
+      transform: rotate(3deg);
+    }
+    &::after {
+      position: absolute;
+      top: -10px;
+      right: -6px;
+      bottom: -10px;
+      left: -6px;
+      content: '';
+      border-radius: 5px;
+      background-color: #ffd117;
+      z-index: -1;
+    }
+  }
+  &__subject {
+    width: 100%;
+    display: grid;
+    grid-template: repeat(6, minmax(auto, 80px)) / repeat(3, minmax(auto, 360px));
+    column-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    &-img-box {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // width: 100%;
+      // height: 320px;
+      grid-row: 1 / 5;
+      grid-column: 1;
+    }
+    &-img {
+      // height: 320px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+    &-title {
+      grid-row: 1;
+      grid-column: 2;
+      font-size: 40px;
+    }
+    &-descr {
+      grid-row: 2 / 5;
+      grid-column: 2 / 4;
+    }
+    &-text {
+      text-indent: 15px;
+      font-size: 16px;
+      line-height: 22px;
+      &::first-letter {
+        font-family: 'Pattaya';
+        font-size: 26px;
+        line-height: 22px;
+        color: #cf5060;
+      }
+    } 
+  }
+}
