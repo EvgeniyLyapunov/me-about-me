@@ -1,4 +1,4 @@
-.overlay-me {
+.overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -8,12 +8,9 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.85);
   transition: 0.4s all ease-in-out;
-  &_show {
-    display: flex;
-  }
 }
 
-.modal-me {
+.modal {
   position: relative;
   width: 550px;
   height: 500px;
@@ -52,6 +49,10 @@
     cursor: pointer;
   }
 } 
+
+.show-flex {
+  display: flex;
+}
 
 .animation-opacity-show {
   animation: opacity-show 0.4s linear;

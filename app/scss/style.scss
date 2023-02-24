@@ -3,14 +3,14 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 @import './base/base';
+@import './base/modals-base';
+@import './base/modals-base-media';
 
 @import './blocks/hero/hero';
 @import './blocks/hero/hero-media';
 
 @import './blocks/me/me';
 @import './blocks/me/me-media';
-@import './blocks/me/me-modals/me-modals-base';
-@import './blocks/me/me-modals/me-modals-media/me-modals-base-media';
 @import './blocks/me/me-modals/backstory';
 @import './blocks/me/me-modals/motivation';
 @import './blocks/me/me-modals/goals';
@@ -24,5 +24,6 @@
 @import './blocks/techno/techno-media';
 
 @import './blocks/portfolio/portfolio';
+@import './blocks/portfolio/portfolio-media';
 
 

@@ -1,10 +1,10 @@
 @media (max-width: 767.98px) {
-  .overlay-me {
+  .overlay {
     z-index: 6;
     // burger button has z-index: 5;
   }
 
-  .modal-me {
+  .modal {
     width: 500px;
     height: 500px;
   }
@@ -33,7 +33,7 @@
 }
 
 @media (max-width: 575.98px) {
-  .modal-me {
+  .modal {
     width: 100vw;
     height: 100vh;
     &__text {

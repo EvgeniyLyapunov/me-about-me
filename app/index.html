@@ -43,7 +43,7 @@
             <a class="hero__link" href="#technologies">technologies</a>
           </li>
           <li class="hero__nav-item">
-            <a class="hero__link" href="#">portfolio</a>
+            <a class="hero__link" href="#section-portfolio">portfolio</a>
           </li>
           <li class="hero__nav-item">
             <a class="hero__link" href="#">feedbacks</a>
@@ -349,11 +349,14 @@
 
   <!-- section portfolio -->
 
-  <section class="portfolio">
+  <section class="portfolio" id="section-portfolio">
     <div class="container portfolio__container">
       <h2 class="portfolio__title">
         Портфолио
       </h2>
+
+      <!-- portfolio subjects -->
+      <!-- my wallet subject -->
       <div class="portfolio__subject">
         <div class="portfolio__subject-img-box">
           <img class="portfolio__subject-img" src="images/portfolio-img/mywallet.jpg" alt="my wallet application">
@@ -363,7 +366,7 @@
           <ul class="portfolio__subject-links-box">
             <li class="portfolio__subject-links-item">
               <a class="portfolio__subject-link" href="https://github.com/EvgeniyLyapunov/MyWallet">
-                перейти на GitHub в репозиторий проекта
+                перейти на GitHub
               </a>
             </li>
             <li class="portfolio__subject-links-item">
@@ -375,15 +378,13 @@
         </div>
         <div class="portfolio__subject-descr">
           <p class="portfolio__subject-text">
-            Это веб-приложение я&nbsp;написал для контроля своего бюджета и&nbsp;расходов. Идея была в&nbsp;том, что&nbsp;бы избавиться от&nbsp;google-sheets в&nbsp;пользу решения с&nbsp;простым вводом данных и&nbsp;с&nbsp;простым представлением данных. Приложение писалось под требования конкретного заказчика (им&nbsp;был я&nbsp;сам), но&nbsp;в&nbsp;процессе разработки я&nbsp;решил добавить простую авторизацию, для тестирования этого приложения любым желающим.
-          </p>
-          <p class="portfolio__subject-text">
-            По&nbsp;факту использования приложения появляются моменты из&nbsp;области&nbsp;UX, которые заносятся в&nbsp;файл todo.txt и&nbsp;по&nbsp;мере возможности дорабатываются. В&nbsp;целом опыт использования и&nbsp;отзывы заказчика&nbsp;&mdash; положительные. :)
-          </p>
-          <p class="portfolio__subject-text">
-            Приложение реализовано для мобильных устройств, как SPA, на&nbsp;чистом Java Script. Для работы с&nbsp;базой данных написал небольшие php скрипты под каждый тип запроса.
+            Это веб-приложение я&nbsp;написал для контроля своего бюджета и&nbsp;расходов. Идея была в&nbsp;том, что&nbsp;бы избавиться от&nbsp;google-sheets в&nbsp;пользу решения с&nbsp;простым вводом данных и&nbsp;с&nbsp;простым представлением данных.
           </p>
         </div>
+        <button class="button-base portfolio__subject-btn-text"
+                data-modal="my-wallet">
+          читать полностью
+        </button>
         <ul class="portfolio__subject-techno-box">
           <li class="portfolio__subject-techno-item">
             <img src="images/icons/techno/html5.svg" alt="icon of technology" class="portfolio__subject-techno-icon">
@@ -417,32 +418,35 @@
           <span class="portfolio__subject-like-count" id="mywallet">0</span>
         </div>
       </div>
+
+
+
     </div>
   </section>
 
 
-  <div class="overlay-me">
+  <div class="overlay overlay-me">
     <div class="modal modal-me backstory hide" data-modal="backstory">
       <div class="modal-me__text-box" id="backstory">
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           Вот всего&nbsp;&mdash; лишь несколько фактов:
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           &mdash;&nbsp;моё формальное образование и&nbsp;работа вообще никак не&nbsp;были связаны с&nbsp;программированием или&nbsp;IT;
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           &mdash;&nbsp;диплом профтехучилища по&nbsp;специальности электромонтёр, и&nbsp;многолетний стаж работы в&nbsp;торговле;
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           &mdash;&nbsp;я&nbsp;всегда чувствовал, что занят не&nbsp;своим делом;
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           Отличная новость:
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           - я стал программистом;
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           - мне это нравится;
         </p>
       </div>
@@ -451,16 +455,16 @@
 
     <div class="modal modal-me motivation hide" data-modal="motivation">
       <div class="modal-me__text-box" id="motivation">
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           Моя мотивация развиваться как программист имеет две стороны: позитивную и&nbsp;негативную.
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           &mdash;&nbsp;мне нравится писать код, нравятся абстрактные логические конструкции, мне нравится чувство, когда твой код работает!
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           &mdash;&nbsp;мне жаль потраченное на&nbsp;другие профессии время;
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           Я&nbsp;осознанно не&nbsp;говорю про деньги, т.&nbsp;к.&nbsp;с&nbsp;одной стороны это очевидная вещь, а&nbsp;с&nbsp;другой это обесценит все остальные пункты.
         </p>
       </div>
@@ -469,16 +473,16 @@
 
     <div class="modal modal-me goals hide" data-modal="goals">
       <div class="modal-me__text-box" id="goals">
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           Моя текущая цель&nbsp;&mdash; найти стабильную работу;
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           И&nbsp;конечно&nbsp;же:
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           &mdash;&nbsp;изучить все связанные с&nbsp;Js технологии;
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           &mdash;&nbsp;сделать Мир лучше;
         </p>
 
@@ -488,10 +492,10 @@
 
     <div class="modal modal-me course hide" data-modal="course">
       <div class="modal-me__text-box" id="course">
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           Сейчас направление моего развития&nbsp;&mdash; Java Script, React и&nbsp;все технологии с&nbsp;ними связанные.
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           Мой background&nbsp;&mdash; это C#, ASP.NET, WPF. При необходимости буду рад обратиться в&nbsp;эту сторону.
         </p>
       </div>
@@ -500,20 +504,41 @@
 
     <div class="modal modal-me what-now hide" data-modal="what-now">
       <div class="modal-me__text-box" id="what-now">
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           На данный момент:
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           - я активно ищу работу;
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           - пишу проект на React "notes about my food";
         </p>
-        <p class="modal-me__text">
+        <p class="modal__text modal-me__text">
           - изучаю алгоритмы и структуры данных через Js;
         </p>
       </div>
       <button class="button-base modal-me__close modal__close"></button>
+    </div>
+  </div>
+
+  <div class="overlay overlay-portfolio">
+    <div class="modal modal-portfolio my-wallet hide" data-modal="my-wallet">
+      <div class="modal-portfolio__text-box" id="my-wallet">
+        <p class="modal__text modal-portfolio__text">
+          Это веб-приложение я&nbsp;написал для контроля своего бюджета и&nbsp;расходов. Идея была в&nbsp;том, что&nbsp;бы избавиться от&nbsp;google-sheets в&nbsp;пользу решения с&nbsp;простым вводом данных и&nbsp;с&nbsp;простым представлением данных.
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          Приложение писалось под требования конкретного заказчика (им&nbsp;был я&nbsp;сам), но&nbsp;в&nbsp;процессе разработки я&nbsp;решил добавить простую авторизацию, для тестирования этого приложения любым желающим.
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          По&nbsp;факту использования приложения появляются моменты из&nbsp;области&nbsp;UX, которые заносятся в&nbsp;файл todo.txt и&nbsp;по&nbsp;мере возможности дорабатываются. В&nbsp;целом опыт использования и&nbsp;отзывы заказчика&nbsp;&mdash; положительные. :)
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          Приложение реализовано для мобильных устройств, как SPA, на&nbsp;чистом Java Script. Для работы с&nbsp;базой данных написал небольшие php скрипты под каждый тип запроса.
+        </p>
+      </div>
+      <button class="button-base modal-portfolio__close modal__close"></button>
+      </div>
     </div>
   </div>
 
