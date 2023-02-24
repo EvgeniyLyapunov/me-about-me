@@ -38,6 +38,7 @@
     }
   }
   &__subject {
+    padding-bottom: 50px;
     width: 100%;
     display: grid;
     grid-template: minmax(auto, 110px) minmax(auto, 50px) repeat(4, minmax(auto, 80px)) / repeat(3, minmax(auto, 360px));

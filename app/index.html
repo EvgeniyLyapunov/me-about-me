@@ -359,7 +359,9 @@
       <!-- my wallet subject -->
       <div class="portfolio__subject">
         <div class="portfolio__subject-img-box">
-          <img class="portfolio__subject-img" src="images/portfolio-img/mywallet.jpg" alt="my wallet application">
+          <img class="portfolio__subject-img"
+               src="images/portfolio-img/mywallet.jpg" 
+               alt="my wallet application">
         </div>
         <div class="portfolio__subject-header">
           <h3 class="portfolio__subject-title">My Wallet</h3>
@@ -412,7 +414,66 @@
           </li>
         </ul>
         <div class="portfolio__subject-like-box">
-          <div class="portfolio__subject-like-img-item">
+          <div class="portfolio__subject-like-img-item" data-like="my-wallet">
+            <img class="portfolio__subject-like-img" src="images/icons/like.svg" alt="like">
+          </div>
+          <span class="portfolio__subject-like-count" id="mywallet">0</span>
+        </div>
+      </div>
+
+      <div class="portfolio__subject">
+        <div class="portfolio__subject-img-box">
+          <img class="portfolio__subject-img"
+               src="images/portfolio-img/personBook.jpg" 
+               alt="Person Book application">
+        </div>
+        <div class="portfolio__subject-header">
+          <h3 class="portfolio__subject-title">Person Book</h3>
+          <ul class="portfolio__subject-links-box">
+            <li class="portfolio__subject-links-item">
+              <a class="portfolio__subject-link" href="https://github.com/EvgeniyLyapunov/PersonBook">
+                перейти на GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="portfolio__subject-descr">
+          <p class="portfolio__subject-text">
+            Проект состоит из&nbsp;трёх независимых завершённых частей&nbsp;&mdash; API сервиса, WEB приложения и&nbsp;Desktop приложения.
+          </p>
+        </div>
+        <button class="button-base portfolio__subject-btn-text"
+                data-modal="person-book">
+          читать полностью
+        </button>
+        <ul class="portfolio__subject-techno-box">
+          <li class="portfolio__subject-techno-item">
+            <img src="images/icons/techno/csharp.svg" alt="icon of technology" class="portfolio__subject-techno-icon">
+          </li>
+          <li class="portfolio__subject-techno-item">
+            <img src="images/icons/techno/wpf.png" alt="icon of technology" class="portfolio__subject-techno-icon">
+          </li>
+          <li class="portfolio__subject-techno-item">
+            <img src="images/icons/techno/asp.svg" alt="icon of technology" class="portfolio__subject-techno-icon">
+          </li>
+          <li class="portfolio__subject-techno-item">
+            <img src="images/icons/techno/entity-framework.png" alt="icon of technology" class="portfolio__subject-techno-icon">
+          </li>
+          <li class="portfolio__subject-techno-item">
+            <img src="images/icons/techno/visual-studio.svg" alt="icon of technology" class="portfolio__subject-techno-icon">
+          </li>
+          <li class="portfolio__subject-techno-item">
+            <img src="images/icons/techno/http.svg" alt="icon of technology" class="portfolio__subject-techno-icon">
+          </li>
+          <li class="portfolio__subject-techno-item">
+            <img src="images/icons/techno/html5.svg" alt="icon of technology" class="portfolio__subject-techno-icon">
+          </li>
+          <li class="portfolio__subject-techno-item">
+            <img src="images/icons/techno/bootstrap.svg" alt="icon of technology" class="portfolio__subject-techno-icon">
+          </li>
+        </ul>
+        <div class="portfolio__subject-like-box">
+          <div class="portfolio__subject-like-img-item" data-like="person-book">
             <img class="portfolio__subject-like-img" src="images/icons/like.svg" alt="like">
           </div>
           <span class="portfolio__subject-like-count" id="mywallet">0</span>
@@ -420,12 +481,14 @@
       </div>
 
 
-
     </div>
   </section>
 
-
+  <!-- modal windows -->
+  <!-- overlay me -->
   <div class="overlay overlay-me">
+
+    <!-- backstory -->
     <div class="modal modal-me backstory hide" data-modal="backstory">
       <div class="modal-me__text-box" id="backstory">
         <p class="modal__text modal-me__text">
@@ -453,6 +516,7 @@
       <button class="button-base modal-me__close modal__close"></button>
     </div>
 
+    <!-- motivation -->
     <div class="modal modal-me motivation hide" data-modal="motivation">
       <div class="modal-me__text-box" id="motivation">
         <p class="modal__text modal-me__text">
@@ -471,6 +535,7 @@
       <button class="button-base modal-me__close modal__close"></button>
     </div>
 
+    <!-- goals -->
     <div class="modal modal-me goals hide" data-modal="goals">
       <div class="modal-me__text-box" id="goals">
         <p class="modal__text modal-me__text">
@@ -485,11 +550,11 @@
         <p class="modal__text modal-me__text">
           &mdash;&nbsp;сделать Мир лучше;
         </p>
-
       </div>
       <button class="button-base modal-me__close modal__close"></button>
     </div>
 
+    <!-- course -->
     <div class="modal modal-me course hide" data-modal="course">
       <div class="modal-me__text-box" id="course">
         <p class="modal__text modal-me__text">
@@ -502,6 +567,7 @@
       <button class="button-base modal-me__close modal__close"></button>
     </div>
 
+    <!-- what-now -->
     <div class="modal modal-me what-now hide" data-modal="what-now">
       <div class="modal-me__text-box" id="what-now">
         <p class="modal__text modal-me__text">
@@ -521,7 +587,10 @@
     </div>
   </div>
 
+  <!-- overlay portfolio -->
   <div class="overlay overlay-portfolio">
+
+    <!-- my-wallet -->
     <div class="modal modal-portfolio my-wallet hide" data-modal="my-wallet">
       <div class="modal-portfolio__text-box" id="my-wallet">
         <p class="modal__text modal-portfolio__text">
@@ -538,8 +607,24 @@
         </p>
       </div>
       <button class="button-base modal-portfolio__close modal__close"></button>
-      </div>
     </div>
+
+    <!-- person book -->
+    <div class="modal modal-portfolio person-book hide" data-modal="person-book">
+      <div class="modal-portfolio__text-box" id="person-book">
+        <p class="modal__text modal-portfolio__text">
+          Цель проекта&nbsp;&mdash; получить практические навыки и&nbsp;закрепить теорию, в&nbsp;рамках изучения фрэймворка ASP.NET Core.
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          Функционал&nbsp;&mdash; регистрация, авторизация и&nbsp;CRUD&nbsp;&mdash; операции с&nbsp;данными, которые представленны в&nbsp;объекте Контакт. Данные хранятся и&nbsp;предоставляются API сервисом посредством HTTP запросов. Пара&nbsp;&mdash; логин пароль валидны как на&nbsp;сайте, так и&nbsp;в&nbsp;десктоп клиенте.
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          На&nbsp;сайте есть администратор&nbsp;&mdash; он&nbsp;может управлять созданием и&nbsp;удалением Юзеров и&nbsp;Администраторов. Юзер может видеть детали всех контактов, но&nbsp;редактировать и&nbsp;удалять только свои. Не&nbsp;зарегистрированный гость может только видеть список имён и&nbsp;аватарок контактов. Данные регистрации на&nbsp;сайте можно использовать для авторизации в&nbsp;десктоп клиенте, и&nbsp;наоборот.
+        </p>
+      </div>
+      <button class="button-base modal-portfolio__close modal__close"></button>
+    </div>
+
   </div>
 
   <script src="js/main.min.js"></script>
