@@ -3,6 +3,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 @import './base/base';
+@import './base/mixins';
 @import './base/modals-base';
 @import './base/modals-base-media';
 
@@ -25,5 +26,8 @@
 
 @import './blocks/portfolio/portfolio';
 @import './blocks/portfolio/portfolio-media';
+
+@import './blocks/feedback/feedback';
+@import './blocks/feedback/feedback-media';
 
 

@@ -41,7 +41,8 @@
     padding-bottom: 50px;
     width: 100%;
     display: grid;
-    grid-template: minmax(auto, 110px) minmax(auto, 50px) repeat(4, minmax(auto, 80px)) / repeat(3, minmax(auto, 360px));
+    grid-template-rows: 110px  50px repeat(4, minmax(30px, 80px));
+    grid-template-columns: repeat(3, minmax(auto, 360px));
     grid-auto-rows: 80px;
     column-gap: 30px;
     justify-items: center;
@@ -50,6 +51,8 @@
       height: 100%;
       grid-row: 1 / 5;
       grid-column: 1;
+      display: flex;
+      justify-content: center;
     }
     &-img {
       height: 100%;
@@ -131,7 +134,8 @@
       grid-column: 1 / 4;
       width: 100%;
       display: grid;
-      grid-template: minmax(auto, 80px) / repeat(auto-fill, minmax(auto, 80px));
+      grid-template-rows: minmax(50px, 80px);
+      grid-template-columns: repeat(auto-fill, minmax(50px, 80px));
       justify-items: center;
       align-items: center;
     }
