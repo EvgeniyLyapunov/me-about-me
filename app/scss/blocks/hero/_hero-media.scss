@@ -43,7 +43,6 @@
     &__btn {
       width: 130px;
       height: 40px;
-      margin-left: 50px;
       font-weight: 200;
       font-size: 20px;
     }
@@ -122,11 +121,11 @@
       padding: 6px 10px;
       font-size: 12px;
       &-cs {
-        bottom: 230px;
+        bottom: 210px;
         left: 20px;
       }
       &-wpf {
-        bottom: 130px;
+        bottom: 120px;
         left: 80px;
       }
       &-asp {
@@ -192,9 +191,13 @@
     }
     &__container {
       padding: 0, 10px;
+      max-height: 95vh;
     }
     &__nav {
       margin-bottom: 2vh;
+    }
+    &__heading-box {
+      min-height: 75vh
     }
     &__title-badge {
       margin-bottom: 5px;
@@ -247,6 +250,17 @@
     &__element {
       width: 14px;
       height: 14px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) and (min-height: 667px) {
+  .hero {
+    &__container {
+      max-height: 95vh;
+    }
+    &__heading-box {
+      min-height: 77vh;
     }
   }
 }
