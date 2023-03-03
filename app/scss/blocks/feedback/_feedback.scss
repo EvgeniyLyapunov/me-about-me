@@ -124,4 +124,20 @@
       background-color: #ffd117;
     }
   }
+  &__outro-answer {
+    position: relative;
+    width: 515px;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -1px;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ffd117;
+    }
+  }
 }
