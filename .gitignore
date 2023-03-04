@@ -3,3 +3,5 @@
 package-lock.json
 favicon/
 mailer/
+server/
+*php

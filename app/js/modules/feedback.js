@@ -27,6 +27,7 @@ const sendFeedback = () => {
         feedbackThanks('Спасибо за ваш визит!');
       }, 6000);
     } else {
+      console.log(answer.status);
       txtElements.forEach(item => {
         item.value = '';
         form.querySelector('.feedback__form-input-btn').blur();

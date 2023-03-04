@@ -10,13 +10,18 @@ async function postData(urlPath, json) {
     return await result.json();
   } catch(error) {
     console.log(error.message);
-    return {status: 'error'}
+    return {status: 'error'};
   }
 }
 
 async function getData(urlPath) {
-  let result = await fetch(urlPath);
-  return await result.json();
+  try{
+    let result = await fetch(urlPath);
+    return await result.json();
+  } catch(error) {
+    console.log(error.message);
+    return {status: 'error'};
+  }
 }
 
 export {postData, getData};
