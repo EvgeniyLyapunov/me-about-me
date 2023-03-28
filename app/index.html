@@ -462,6 +462,81 @@
         </div>
       </div>
 
+      <!-- color code subject -->
+      <div class="portfolio__subject subject">
+        <div class="subject__main">
+
+          <div class="subject__main-header-320">
+            <h3 class="subject__main-title">Color Code</h3>
+            <ul class="subject__main-links-block">
+              <li class="subject__main-links-item">
+                <a class="subject__main-link" href="https://github.com/EvgeniyLyapunov/color-code">
+                  перейти на GitHub
+                </a>
+              </li>
+              <li class="subject__main-links-item">
+                <a class="subject__main-link" href="https://colorcode.little-wing.ru">
+                  открыть проект
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subject__main-img-block">
+            <img class="subject__main-img" src="images/portfolio-img/color-code.jpg" alt="color code application">
+          </div>
+          <div class="subject__main-description-block">
+            <div class="subject__main-header">
+              <h3 class="subject__main-title">Color Code</h3>
+              <ul class="subject__main-links-block">
+                <li class="subject__main-links-item">
+                  <a class="subject__main-link" href="https://github.com/EvgeniyLyapunov/color-code">
+                    перейти на GitHub
+                  </a>
+                </li>
+                <li class="subject__main-links-item">
+                  <a class="subject__main-link" href="https://colorcode.little-wing.ru">
+                    открыть проект
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="subject__main-descr">
+              Color Code&nbsp;&mdash; это игра, в&nbsp;которую я&nbsp;играл в&nbsp;детстве. Пластмассовое игровое поле
+              было разделено на&nbsp;зоны, где с&nbsp;помощью маленьких цветных фишек один игрок загадывал код,
+              а&nbsp;второй пытался его угадать.<br>
+              Проблема была у&nbsp;игрока, который загадывал код ...
+            </p>
+            <button class="button-base subject__main-reade-more" data-modal="color-code">читать полностью</button>
+          </div>
+        </div>
+        <div class="subject__footer">
+          <ul class="subject__footer-techno-block">
+            <li class="subject__footer-techno-item">
+              <img src="images/icons/techno/javascript.svg" alt="icon of technology"
+                class="subject__footer-techno-icon">
+            </li>
+            <li class="subject__footer-techno-item">
+              <img src="images/icons/techno/react.svg" alt="icon of technology" class="subject__footer-techno-icon">
+            </li>
+            <li class="subject__footer-techno-item">
+              <img src="images/icons/techno/create-react-app.svg" alt="icon of technology"
+                class="subject__footer-techno-icon">
+            </li>
+            <li class="subject__footer-techno-item">
+              <img src="images/icons/techno/redux.svg" alt="icon of technology" class="subject__footer-techno-icon">
+            </li>
+            <li class="subject__footer-techno-item">
+              <img src="images/icons/techno/sass.svg" alt="icon of technology" class="subject__footer-techno-icon">
+            </li>
+          </ul>
+          <div class="subject__footer-like-block">
+            <button class="subject__footer-like-btn" name="colorCode" data-like="colorCode"></button>
+            <span class="subject__footer-like-count" id="colorCode">0</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -683,6 +758,45 @@
           и&nbsp;Администраторов. Юзер может видеть детали всех контактов, но&nbsp;редактировать и&nbsp;удалять только
           свои. Не&nbsp;зарегистрированный гость может только видеть список имён и&nbsp;аватарок контактов. Данные
           регистрации на&nbsp;сайте можно использовать для авторизации в&nbsp;десктоп клиенте, и&nbsp;наоборот.
+        </p>
+      </div>
+      <button class="button-base modal-portfolio__close modal__close"></button>
+    </div>
+
+    <!-- color-code -->
+    <div class="modal modal-portfolio color-code hide" data-modal="color-code">
+      <div class="modal-portfolio__text-box" id="color-code">
+        <p class="modal__text modal-portfolio__text">
+          Приложение концептуально задумано и&nbsp;реализовано для использования с&nbsp;мобильного телефона.
+          Проект написан на&nbsp;React и&nbsp;Redux, использован шаблон create-react-app;
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          Color Code&nbsp;&mdash; это игра, в&nbsp;которую я&nbsp;играл
+          в&nbsp;детстве. Пластмассовое игровое поле было разделено на&nbsp;зоны,
+          где с&nbsp;помощью маленьких цветных фишек один игрок загадывал код,
+          а&nbsp;второй пытался его угадать.
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          Проблема была у&nbsp;игрока, который загадывал код&nbsp;&mdash; ему было
+          просто скучно, т.к. его ролью было придумать комбинацию и&nbsp;ждать
+          варианты ответов второго игрока.
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          Я&nbsp;написал Color Code, т.к. очень любил эту игру. Сейчас код
+          загадывается программой и&nbsp;игрок не&nbsp;зависит
+          ни&nbsp;от&nbsp;кого.
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          Итак, на&nbsp;старте есть скрытый от&nbsp;нас код, являющийся
+          комбинацией цветов. Наша задача, используя логику, за&nbsp;определённое
+          число попыток разгадать эту последовательность. </p>
+        <p class="modal__text modal-portfolio__text">
+          После каждого хода мы&nbsp;получаем определённую информацию о&nbsp;том,
+          насколько наш вариант соответствует &laquo;Секретному Коду&raquo;.
+        </p>
+        <p class="modal__text modal-portfolio__text">
+          Таким образом, делая ход и&nbsp;получая информацию мы&nbsp;решаем задачу
+          и&nbsp;получаем &laquo;Секретный код&raquo;.
         </p>
       </div>
       <button class="button-base modal-portfolio__close modal__close"></button>
