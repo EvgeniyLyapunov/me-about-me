@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../../images/bg/meh.jpg');
+    background-image: url('../images/bg/meh.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -32,7 +32,7 @@
     position: relative;
     width: 280px;
     margin: 0 auto 12vh auto;
-    font-family: "Yanone Kaffeesatz";
+    font-family: 'Yanone Kaffeesatz';
     font-weight: 300;
     font-size: 60px;
     text-align: center;
@@ -65,7 +65,10 @@
     position: relative;
     width: 100%;
     display: grid;
-    grid-template: repeat(6, minmax(30px, 60px)) / repeat(14, minmax(30px, 60px));
+    grid-template: repeat(6, minmax(30px, 60px)) / repeat(
+        14,
+        minmax(30px, 60px)
+      );
     justify-content: space-between;
     justify-items: center;
     align-items: center;

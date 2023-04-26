@@ -1,13 +1,14 @@
-"use strict";
+'use strict';
 
 const checkLocalStorage = () => {
-  if(!localStorage.getItem('portfolioLikes')) {
+  if (!localStorage.getItem('portfolioLikes')) {
     const portfolioLikes = {
       myWallet: false,
-      personBook: false
-    }
+      personBook: false,
+      colorCode: false,
+    };
     localStorage.setItem('portfolioLikes', `${JSON.stringify(portfolioLikes)}`);
-  } 
-}
+  }
+};
 
 export default checkLocalStorage;

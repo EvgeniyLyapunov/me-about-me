@@ -7,9 +7,10 @@ function showModal(allModalsSelector, overlaySelector, modalSelector) {
   overlay.classList.add('show-flex');
   overlay.classList.add('animation-opacity-show');
 
+  const scrollWidth = window.innerWidth - document.documentElement.clientWidth;
   document.querySelector('body').style.overflow = 'hidden';
   if (document.documentElement.clientWidth > 500) {
-    document.body.style.paddingRight = 17 + 'px';
+    document.body.style.paddingRight = scrollWidth + 'px';
   }
 
   modals.forEach((item) => {
@@ -68,7 +69,7 @@ function closeModal(allModalsSelector, closeButtonsSelector, overlaySelector) {
     overlay.classList.add('animation-opacity-hide');
 
     document.querySelector('body').style.overflow = '';
-    document.body.style.paddingRight = '';
+    document.querySelector('body').style.paddingRight = '';
 
     setTimeout(() => {
       modalItem.classList.remove('show-flex');

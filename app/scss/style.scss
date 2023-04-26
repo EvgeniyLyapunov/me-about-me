@@ -1,34 +1,34 @@
-@import './libs/normalize';
-@import './libs/fonts';
+@import '../scss/libs/normalize';
+@import '../scss/libs/fonts';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-@import './base/base';
-@import './base/mixins';
-@import './base/modals-base';
-@import './base/modals-base-media';
+@import '../scss/base/base';
+@import '../scss/base/mixins';
+@import '../scss/base/modals-base';
+@import '../scss/base/modals-base-media';
 
-@import './blocks/hero/hero';
-@import './blocks/hero/hero-media';
+@import '../scss/blocks/hero/hero';
+@import '../scss/blocks/hero/hero-media';
 
-@import './blocks/me/me';
-@import './blocks/me/me-media';
-@import './blocks/me/me-modals/backstory';
-@import './blocks/me/me-modals/motivation';
-@import './blocks/me/me-modals/goals';
-@import './blocks/me/me-modals/course';
-@import './blocks/me/me-modals/what-now';
+@import '../scss/blocks/me/me';
+@import '../scss/blocks/me/me-media';
+@import '../scss/blocks/me/me-modals/backstory';
+@import '../scss/blocks/me/me-modals/motivation';
+@import '../scss/blocks/me/me-modals/goals';
+@import '../scss/blocks/me/me-modals/course';
+@import '../scss/blocks/me/me-modals/what-now';
 
-@import './blocks/skills/skills';
-@import './blocks/skills/skills-media';
+@import '../scss/blocks/skills/skills';
+@import '../scss/blocks/skills/skills-media';
 
-@import './blocks/techno/techno';
-@import './blocks/techno/techno-media';
+@import '../scss/blocks/techno/techno';
+@import '../scss/blocks/techno/techno-media';
 
-@import './blocks/portfolio/portfolio';
-@import './blocks/portfolio/portfolio-media';
+@import '../scss/blocks/portfolio/portfolio';
+@import '../scss/blocks/portfolio/portfolio-media';
 
-@import './blocks/feedback/feedback';
-@import './blocks/feedback/feedback-media';
+@import '../scss/blocks/feedback/feedback';
+@import '../scss/blocks/feedback/feedback-media';
 
-@import './blocks/footer/footer';
-@import './blocks/footer/footer-media';
+@import '../scss/blocks/footer/footer';
+@import '../scss/blocks/footer/footer-media';

@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../../images/bg/written-book.png');
+    background-image: url('../images/bg/written-book.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -22,14 +22,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(256, 256, 256, 0.80);
+    background-color: rgba(256, 256, 256, 0.8);
     z-index: -3;
   }
   &__title {
     position: relative;
     width: 200px;
     margin: 0 auto 5vh auto;
-    font-family: "Yanone Kaffeesatz";
+    font-family: 'Yanone Kaffeesatz';
     font-weight: 300;
     font-size: 60px;
     text-align: center;

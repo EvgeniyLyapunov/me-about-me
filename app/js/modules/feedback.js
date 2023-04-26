@@ -1,4 +1,4 @@
-import {postData} from '../services/dataBaseQueries';
+import { postData } from '../services/dataBaseQueries';
 
 const sendFeedback = () => {
   const form = document.querySelector('.feedback__form');
@@ -7,7 +7,7 @@ const sendFeedback = () => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    if(document.querySelector('.feedback__form-textarea').value.length === 0) {
+    if (document.querySelector('.feedback__form-textarea').value.length === 0) {
       return;
     }
 
@@ -17,8 +17,8 @@ const sendFeedback = () => {
 
     const answer = await postData('mailer/smart.php', json);
 
-    if(answer.status === 'ok') {
-      txtElements.forEach(item => {
+    if (answer.status === 'ok') {
+      txtElements.forEach((item) => {
         item.value = '';
         form.querySelector('.feedback__form-input-btn').blur();
       });
@@ -28,7 +28,7 @@ const sendFeedback = () => {
       }, 6000);
     } else {
       console.log(answer.status);
-      txtElements.forEach(item => {
+      txtElements.forEach((item) => {
         item.value = '';
         form.querySelector('.feedback__form-input-btn').blur();
       });
@@ -37,8 +37,7 @@ const sendFeedback = () => {
         feedbackThanks('Спасибо за ваш визит!');
       }, 6000);
     }
-
-  })
+  });
 
   function feedbackThanks(text) {
     const textBlock = document.querySelector('.feedback__outro');

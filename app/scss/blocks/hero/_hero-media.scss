@@ -76,10 +76,10 @@
       height: 100%;
       top: 0;
       left: 0;
-      background-image: url('../../../images/bg/hero-bg-768.jpg');
+      background-image: url('../images/bg/hero-bg-768.jpg');
       background-position: left top;
       background-size: cover;
-      background-repeat:no-repeat;
+      background-repeat: no-repeat;
       filter: opacity(0.5);
       z-index: -1;
     }
@@ -150,16 +150,16 @@
       height: 18px;
       transition: all 0.8s ease-in-out;
       &_first {
-        background-color:#ffd8c7;
+        background-color: #ffd8c7;
       }
       &_second {
-        background-color:#ffd117;
+        background-color: #ffd117;
       }
       &_thirth {
-        background-color:#5cd2d9;
+        background-color: #5cd2d9;
       }
       &_fourth {
-        background-color:#ff6927;
+        background-color: #ff6927;
       }
     }
     &_active {
@@ -182,10 +182,10 @@
       height: 100%;
       top: 0;
       left: 0;
-      background-image: url('../../../images/bg/hero-bg-320.jpg');
+      background-image: url('../images/bg/hero-bg-320.jpg');
       background-position: left top;
       background-size: cover;
-      background-repeat:no-repeat;
+      background-repeat: no-repeat;
       filter: opacity(0.5);
       z-index: -1;
     }
@@ -197,7 +197,7 @@
       margin-bottom: 2vh;
     }
     &__heading-box {
-      min-height: 75vh
+      min-height: 75vh;
     }
     &__title-badge {
       margin-bottom: 5px;
@@ -241,7 +241,6 @@
         left: 120px;
       }
     }
- 
   }
 
   .burger {
