@@ -1,0 +1,13 @@
+.portfolio-swiper {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  &__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__subject {
+    margin-bottom: 50px;
+  }
+}

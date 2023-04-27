@@ -33,8 +33,9 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "bootstrap": "^5.2.3",
     "group-css-media-queries-loader": "^4.3.0",
-    "bootstrap": "^5.2.3"
+    "swiper": "^9.2.4"
   },
   "repository": {
     "type": "git",
