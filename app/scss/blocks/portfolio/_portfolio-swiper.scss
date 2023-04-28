@@ -1,13 +1,116 @@
 .portfolio-swiper {
   width: 100%;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
   &__slide {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  &__subject {
-    margin-bottom: 50px;
+}
+
+.ps-subj {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__header {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    &-title {
+      font-family: 'Acme';
+      font-size: 40px;
+    }
+    &-links {
+      display: flex;
+      align-items: center;
+    }
+    &-links-item {
+      padding: 0 10px;
+      margin-right: 50px;
+      border-radius: 5px;
+      transition: 0.4s all ease-in-out;
+      &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-link {
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: lowercase;
+      color: #5cd2d9;
+      transition: 0.4s all ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: #5cd2d9;
+      }
+    }
+  }
+  &__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-img-block {
+      width: 80%;
+    }
+    &-img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &-descr {
+      padding: 20px;
+      text-indent: 15px;
+      font-size: 16px;
+      line-height: 22px;
+      &::first-letter {
+        font-family: 'Pattaya';
+        font-size: 26px;
+        line-height: 22px;
+        color: #cf5060;
+      }
+    }
+  }
+  &__footer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    &-techno-block {
+      width: 70%;
+      display: flex;
+      align-items: center;
+    }
+    &-techno-item {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-techno-icon {
+      height: 100%;
+      object-fit: contain;
+    }
+    &-like-block {
+      display: flex;
+      align-items: center;
+      margin-right: 50px;
+    }
   }
 }
