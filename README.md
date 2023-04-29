@@ -35,9 +35,6 @@
 ---
 ## 🛠 Стек, технологии, библиотеки<br>
 <div>
-  <a href="https://gulpjs.com/">
-    <img width="50" height="50" title="gulp" src="https://user-images.githubusercontent.com/77357671/210009329-ffb40272-c4e2-4f19-9a02-09fc510d5fac.svg"/>
-  </a>
   <a href="https://webpack.js.org">
     <img width="50" height="50" title="webpack" src="https://user-images.githubusercontent.com/77357671/233195925-1800d7d1-c810-4773-b70d-29a1121a2a93.svg"/>
   </a>
