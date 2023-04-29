@@ -5,12 +5,12 @@ const portfolioSwiper = new Swiper('.portfolio-swiper', {
   spaceBetween: 100,
   loop: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.portfolio-swiper__pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.portfolio-swiper__button-next',
+    prevEl: '.portfolio-swiper__button-prev',
   },
 });
 

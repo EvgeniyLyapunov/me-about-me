@@ -31,7 +31,7 @@
 
   <!-- section hero -->
 
-  <section class="hero">
+  <section class="hero" id="section-hero">
     <div class="container hero__container">
       <nav class="hero__nav">
         <ul class="hero__nav-list" id="hero-nav-list">
@@ -388,6 +388,10 @@
             <span class="subject__footer-like-count" id="myWallet">0</span>
           </div>
         </div>
+
+        <div class="subject__decor subject__decor-top"></div>
+        <div class="subject__decor subject__decor-right"></div>
+        <div class="subject__decor subject__decor-bottom"></div>
       </div>
 
       <!-- person book subject -->
@@ -460,6 +464,10 @@
             <span class="subject__footer-like-count" id="personBook">0</span>
           </div>
         </div>
+
+        <div class="subject__decor subject__decor-top"></div>
+        <div class="subject__decor subject__decor-right"></div>
+        <div class="subject__decor subject__decor-bottom"></div>
       </div>
 
       <!-- color code subject -->
@@ -535,6 +543,10 @@
             <span class="subject__footer-like-count" id="colorCode">0</span>
           </div>
         </div>
+
+        <div class="subject__decor subject__decor-top"></div>
+        <div class="subject__decor subject__decor-right"></div>
+        <div class="subject__decor subject__decor-bottom"></div>
       </div>
 
       <!-- slider web-layout subject -->
@@ -656,9 +668,7 @@
                   <img class="ps-subj__main-img" src="images/portfolio-img/amrita.jpg" alt="site for a young artist">
                 </div>
                 <p class="ps-subj__main-descr">
-                  Проект был реализован в&nbsp;рамках практики вёрстки по&nbsp;макету из&nbsp;figma. Так&nbsp;же это
-                  можно назвать работой на&nbsp;заказ&nbsp;&mdash; заказчик контролировал готовый вид и&nbsp;вносил свои
-                  пожелания.
+                  Проект был реализован как заказ. По&nbsp;макету заказчика в&nbsp;Figma.
                 </p>
               </div>
               <div class="ps-subj__footer">
@@ -690,14 +700,66 @@
             </div>
           </div>
 
-          <div class="swiper-slide portfolio-swiper__slide">Slide 4</div>
+          <div class="swiper-slide portfolio-swiper__slide">
+            <div class="portfolio-swiper-subject ps-subj">
+              <div class="ps-subj__header">
+                <h3 class="ps-subj__header-title">Me about me</h3>
+                <ul class="ps-subj__header-links">
+                  <li class="ps-subj__header-links-item">
+                    <a class="ps-subj__header-link" href="https://github.com/EvgeniyLyapunov/me-about-me">перейти на
+                      GitHub</a>
+                  </li>
+                  <li class="ps-subj__header-links-item">
+                    <a class="ps-subj__header-link" href="#section-hero">открыть проект</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="ps-subj__main">
+                <div class="ps-subj__main-img-block">
+                  <img class="ps-subj__main-img" src="images/portfolio-img/me-about-me.jpg" alt="me about me site">
+                </div>
+                <p class="ps-subj__main-descr">
+                  Этот проект ценен как практика, и&nbsp;как возможность немного рассказать о&nbsp;себе.
+                </p>
+              </div>
+              <div class="ps-subj__footer">
+                <ul class="ps-subj__footer-techno-block">
+                  <li class="ps-subj__footer-techno-item">
+                    <img src="images/icons/techno/javascript.svg" alt="icon of technology"
+                      class="ps-subj__footer-techno-icon">
+                  </li>
+                  <li class="ps-subj__footer-techno-item">
+                    <img src="images/icons/techno/webpack.svg" alt="icon of technology"
+                      class="ps-subj__footer-techno-icon">
+                  </li>
+                  <li class="ps-subj__footer-techno-item">
+                    <img src="images/icons/techno/sass.svg" alt="icon of technology"
+                      class="ps-subj__footer-techno-icon">
+                  </li>
+                  <li class="ps-subj__footer-techno-item">
+                    <img src="images/icons/techno/swiper-logo.svg" alt="icon of technology"
+                      class="ps-subj__footer-techno-icon">
+                  </li>
+                  <li class="ps-subj__footer-techno-item">
+                    <img src="images/icons/techno/php.svg" alt="icon of technology" class="ps-subj__footer-techno-icon">
+                  </li>
+                  <li class="ps-subj__footer-techno-item">
+                    <img src="images/icons/techno/mysql.svg" alt="icon of technology"
+                      class="ps-subj__footer-techno-icon">
+                  </li>
+                </ul>
+                <div class="ps-subj__footer-like-block">
+                  <button class="subject__footer-like-btn" name="meAboutMe" data-like="meAboutMe"></button>
+                  <span class="subject__footer-like-count" id="meAboutMe">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="portfolio-swiper__button-next"></div>
+        <div class="portfolio-swiper__button-prev"></div>
       </div>
-
-
+      <div class="portfolio-swiper__pagination"></div>
 
     </div>
   </section>
