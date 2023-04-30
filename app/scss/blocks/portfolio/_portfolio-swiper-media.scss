@@ -1,0 +1,123 @@
+@media (max-width: 1199.98px) {
+  .portfolio-swiper {
+    &__button-prev,
+    &__button-next {
+      bottom: 270px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .portfolio-swiper {
+    padding-right: 25px;
+    padding-left: 25px;
+    &__button-prev,
+    &__button-next {
+      bottom: 230px;
+    }
+  }
+
+  .ps-subj {
+    &__header {
+      justify-content: space-between;
+      &-title {
+        font-size: 35px;
+      }
+      &-links-item {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-swiper {
+    margin-bottom: 10px;
+    padding: 10px;
+    &__button-prev {
+      width: 30px;
+      height: 40px;
+      bottom: 210px;
+      left: 0;
+    }
+
+    &__button-next {
+      width: 30px;
+      height: 40px;
+      bottom: 210px;
+      right: 0;
+    }
+  }
+
+  .ps-subj {
+    &__header {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 10px;
+      &-title {
+        font-size: 30px;
+      }
+      &-link {
+        font-size: 13px;
+      }
+    }
+    &__main {
+      &-img-block {
+        width: 85%;
+      }
+      &-descr {
+        width: 85%;
+        font-size: 14px;
+        line-height: 20px;
+        &::first-letter {
+          line-height: 20px;
+        }
+      }
+    }
+    &__footer {
+      width: 85%;
+      &-techno-block {
+        width: 100%;
+      }
+      &-techno-item {
+        height: 30px;
+        width: 30px;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .portfolio-swiper {
+    padding: 10px 0;
+    &__button-prev,
+    &__button-next {
+      display: none;
+    }
+  }
+
+  .ps-subj {
+    &__header {
+      &-title {
+        font-size: 26px;
+      }
+    }
+    &__main {
+      &-img-block {
+        width: 100%;
+      }
+      &-descr {
+        width: 100%;
+      }
+    }
+    &__footer {
+      width: 100%;
+      &-techno-item {
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

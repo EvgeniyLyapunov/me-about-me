@@ -118,6 +118,7 @@
       object-fit: cover;
     }
     &-descr {
+      width: 80%;
       padding: 20px;
       text-indent: 15px;
       font-size: 16px;
@@ -135,7 +136,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 50px;
     &-techno-block {
       width: 70%;
       display: flex;
@@ -159,7 +159,6 @@
     &-like-block {
       display: flex;
       align-items: center;
-      margin-right: 50px;
     }
   }
 }
