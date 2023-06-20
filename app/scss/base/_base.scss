@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -11,7 +13,8 @@ p {
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -50,6 +53,16 @@ body {
   font-weight: 200;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-up {
+  position: fixed;
+  right: 3vw;
+  bottom: 3vh;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s all ease-in-out;
   cursor: pointer;
 }
 

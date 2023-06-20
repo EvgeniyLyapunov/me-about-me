@@ -28,7 +28,10 @@
       width: 220px;
     }
     &__grid {
-      grid-template: repeat(6, minmax(30px, 50px)) / repeat(14, minmax(auto, 50px));
+      grid-template: repeat(6, minmax(30px, 50px)) / repeat(
+          14,
+          minmax(auto, 50px)
+        );
       gap: 10px 0;
       &-me-block {
         grid-row: 1 / 7;
@@ -110,7 +113,10 @@
       font-size: 30px;
     }
     &__grid {
-      grid-template: repeat(9, minmax(30px, 50px)) / repeat(10, minmax(auto, 50px));
+      grid-template: repeat(9, minmax(30px, 50px)) / repeat(
+          10,
+          minmax(auto, 50px)
+        );
       gap: 10px 0;
       &-elem {
         &_javascript {
@@ -146,8 +152,8 @@
           grid-column: 5 / 7;
         }
         &_visual-studio-code {
-          grid-row: 5;
-          grid-column: 1;
+          grid-row: 7;
+          grid-column: 10;
         }
         &_webpack {
           grid-row: 3;
@@ -155,7 +161,7 @@
         }
         &_gulp {
           grid-row: 6;
-          grid-column: 3;
+          grid-column: 7;
         }
         &_github {
           grid-row: 9;

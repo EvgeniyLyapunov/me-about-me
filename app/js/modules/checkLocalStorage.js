@@ -10,6 +10,7 @@ const checkLocalStorage = () => {
       noemi: false,
       amrita: false,
       meAboutMe: false,
+      notesAboutMyFood: false,
     };
     localStorage.setItem('portfolioLikes', `${JSON.stringify(portfolioLikes)}`);
   }

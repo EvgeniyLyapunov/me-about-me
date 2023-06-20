@@ -12,6 +12,7 @@ import techno from './modules/techno';
 import portfolio from './modules/portfolio';
 import portfolioSwiper from './modules/portfolioSwiper';
 import sendFeedback from './modules/feedback';
+import { arrowUp } from './modules/arrow-up';
 
 checkLocalStorage();
 queryPortfolioLikes();
@@ -20,3 +21,4 @@ me();
 techno();
 portfolio();
 sendFeedback();
+arrowUp();
