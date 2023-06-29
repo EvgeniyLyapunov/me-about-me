@@ -1,4 +1,5 @@
 'use strict';
+import { visitCounter } from './visits';
 
 const techno = () => {
   const section = document.querySelector('.techno');
@@ -45,6 +46,7 @@ const techno = () => {
           'animate__fadeIn',
           'animate__slower'
         );
+        visitCounter('techno');
       }, +data + 400);
       setTimeout(() => {
         text.classList.remove('hide');

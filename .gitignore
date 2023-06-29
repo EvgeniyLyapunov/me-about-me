@@ -3,6 +3,6 @@
 package-lock.json
 favicon/
 mailer/
-server/
-*php
+config.php
 commitText.txt
+mailer

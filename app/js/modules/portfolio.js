@@ -1,5 +1,6 @@
 import { showModal, closeModal } from './modal';
 import { postData } from '../services/dataBaseQueries';
+import { visitCounter } from './visits';
 
 const portfolio = () => {
   const textButtons = document.querySelectorAll('.subject__main-reade-more');
@@ -11,6 +12,7 @@ const portfolio = () => {
         '.overlay-portfolio',
         e.target.getAttribute('data-modal')
       );
+      visitCounter(e.target.getAttribute('data-modal'));
     });
   });
 
